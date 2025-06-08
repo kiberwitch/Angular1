@@ -9,10 +9,10 @@
 
 body {
   width: 100%;
-  max-width: 1920px;
+  max-width: 100%;
+  overflow-x: hidden;
   min-height: 100vh;
   line-height: 1.5;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -282,6 +282,7 @@ table {
   margin-top: 1.5rem;
   font-size: 0.9rem;
   line-height: 1.5;
+  color: #ffff;
 }
 
 /* Company section */
@@ -290,9 +291,13 @@ table {
   background-color: #221F1F;
   justify-content: center;
   gap: 10px;
-  width: 100%;
-  max-width: 1920px;
+
 }
+
+.company img {
+  display: none;
+}
+
 
 /* Banner section */
 .banner {
@@ -726,7 +731,7 @@ table {
   .cta-container {
     position: relative;
     right: -44px;
-    bottom: -115px;
+    bottom: -100px;
     max-width: 100%;
 
   }
@@ -987,7 +992,8 @@ table {
 }
 
 .map-overlay {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 175px;
   position: absolute;
   top: 0;
@@ -2007,9 +2013,7 @@ margin: 0 auto;
 }
 /* Мобильные стили */
 @media (max-width: 768px) {
-  .about-container {
-    /* Можно задать относительный или фиксированный размер контейнера */
-  }
+ 
   /* Замена картинки на другую для моб */
   .about-background {
     content: url('../img/main/Frame 193-mob.png'); /* Укажите путь к мобильной картинке */
