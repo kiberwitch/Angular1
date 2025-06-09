@@ -1108,7 +1108,7 @@ table {
 }
 
 /* Help Button */
-.help-button {
+.help-button-logistics {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -2211,4 +2211,1933 @@ margin: 0 auto;
   color: white;
   opacity: 0.7;
   text-transform: uppercase;
+}
+
+
+
+
+/*----------------------------------------ВТОРАЯ СТРАНИЦа---------------------------------------------------------------------------------------*/
+
+
+.aerotrans-shipping-section {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%; /* Изменено с фиксированной высоты */
+  min-height: 800px; /* Минимальная высота для десктопов */
+  padding: 60px 0; /* Добавлены отступы сверху и снизу */
+}
+
+.aerotrans-global-map {
+  position: absolute;
+  right: 300px;
+  width: 800px;
+  display: block;
+  padding-top: 100px;
+  margin-left: 1200px;
+}
+
+.aerotrans-content-overlay {
+  position: relative; /* Изменено с absolute */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aerotrans-main-container {
+  width: 100%;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+
+.aerotrans-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 800px;
+padding-top: 200px;
+}
+
+.aerotrans-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aerotrans-main-title {
+  color: white;
+  font-size: 67px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.aerotrans-description-text {
+  color: white;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.8;
+  margin: 0;
+  max-width: 607px;
+}
+
+.aerotrans-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.aerotrans-quote-btn {
+  width: 230px;
+  padding: 25px 37px;
+  background: #5F0A00;
+  border-radius: 900px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.aerotrans-btn-icon svg {
+  display: block;
+}
+
+.aerotrans-cost-info {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Медиазапросы для адаптива */
+@media (max-width: 1600px) {
+  .aerotrans-main-container {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  
+  .aerotrans-global-map {
+    right: 200px;
+    width: 700px;
+    margin-left: 800px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .aerotrans-main-container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
+  .aerotrans-global-map {
+    right: 100px;
+    width: 600px;
+    margin-left: 700px;
+  }
+  
+  .aerotrans-main-title {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aerotrans-main-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  .aerotrans-global-map {
+    right: 50px;
+    width: 500px;
+    margin-left: 600px;
+  }
+  
+  .aerotrans-main-title {
+    font-size: 48px;
+  }
+  
+  .aerotrans-description-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aerotrans-shipping-section {
+    min-height: 400px;
+  }
+  
+  .aerotrans-main-container {
+    height: 200px;
+text-align: center;
+  }
+  
+  .aerotrans-global-map {
+    display: none; /* Скрываем изображение на мобильных */
+  }
+  
+  .aerotrans-main-title {
+    font-size: 42px;
+  }
+  
+  .aerotrans-description-text {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  
+  .aerotrans-action-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .aerotrans-quote-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aerotrans-main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .aerotrans-main-title {
+    font-size: 36px;
+  }
+  
+  .aerotrans-description-text {
+    font-size: 15px;
+  }
+  
+  .aerotrans-info-content {
+    padding-top: 50px;
+    gap: 20px;
+  }
+  
+  .aerotrans-header-block {
+    gap: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section container */
+.work-why-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Для обрезки фона если нужно */
+}
+
+/* Background image */
+.work-why-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Content container */
+.work-why-container {
+  position: relative;
+  z-index: 2;
+  padding: 120px 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Header section */
+.work-why-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.work-why-title {
+  color: #17161B;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.work-why-subtitle {
+  color: #17161B;
+  font-size: 19px;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.7;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 700px;
+}
+
+/* Cards container */
+.work-why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual cards */
+.work-why-card {
+  width: 338px;
+  padding: 25px;
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.work-card-icon {
+  width: 54px;
+  height: 54px;
+}
+
+.work-card-title {
+  color: #17161B;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.work-card-desc {
+  color: #17161B;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.7;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1600px) {
+  .work-why-container {
+    padding: 100px 180px;
+  }
+  
+  .work-why-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .work-why-container {
+    padding: 80px 120px;
+  }
+  
+  .work-why-card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .work-why-container {
+    padding: 70px 80px;
+    gap: 30px;
+  }
+  
+  .work-why-title {
+    font-size: 42px;
+  }
+  
+  .work-why-subtitle {
+    font-size: 17px;
+  }
+  
+  .work-why-cards {
+    gap: 20px;
+  }
+  
+  .work-why-card {
+    width: calc(50% - 20px); /* 2 карточки в ряд */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-why-container {
+    padding: 60px 40px;
+  }
+  
+  .work-why-title {
+    font-size: 36px;
+  }
+  
+  .work-why-subtitle {
+    font-size: 16px;
+  }
+  
+  .work-why-header {
+    gap: 12px;
+  }
+  
+  .work-card-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-why-container {
+    padding: 50px 20px;
+    gap: 25px;
+  }
+  
+  .work-why-title {
+    font-size: 32px;
+  }
+  
+  .work-why-subtitle {
+    font-size: 15px;
+  }
+  
+  .work-why-card {
+    width: 100%; /* 1 карточка в ряд */
+    padding: 20px;
+  }
+  
+  .work-card-title {
+    font-size: 17px;
+  }
+  
+  .work-card-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .work-why-title {
+    font-size: 28px;
+  }
+  
+  .work-why-subtitle {
+    font-size: 14px;
+  }
+  
+  .work-why-header {
+    gap: 10px;
+  }
+  
+  .work-why-container {
+    gap: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global-network-container {
+  width: 100%;
+  max-width: 1920px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.title-wrapper {
+  width: 844px;
+  color: #17161B;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 69.66px;
+}
+
+.subtitle-wrapper {
+  opacity: 0.70;
+  color: #17161B;
+  font-size: 19px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 28.50px;
+}
+
+.help-button-wrapper{
+  position: absolute;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  left: 900px;
+}
+
+.button-icon {
+  width: 72px;
+  height: 72px;
+  background: #5F0A00;
+  box-shadow: 0px 0px 27px rgba(95, 10, 0, 0.12);
+  border-radius: 900px;
+  outline: 5px rgba(95, 10, 0, 0.10) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-text {
+  width: 107px;
+  color: #242424;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 19.20px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 1200px) {
+  .help-button-wrapper {
+    left: 750px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .help-button-wrapper {
+    left: 650px;
+  }
+  
+  .title-wrapper {
+    width: 700px;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  
+  .wrapper {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .help-button-wrapper {
+    left: 550px;
+  }
+  
+  .title-wrapper {
+    width: 600px;
+    font-size: 42px;
+    line-height: 52px;
+  }
+  
+  .subtitle-wrapper {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  
+  .wrapper {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-network-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 30px;
+  }
+  
+  .help-button-wrapper {
+    display: none; /* Скрываем кнопку на мобильных */
+  }
+  
+  .title-wrapper {
+    width: 500px;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  
+  .subtitle-wrapper {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-wrapper {
+    width: 400px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  
+  .subtitle-wrapper {
+    width: 350px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .wrapper {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-network-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 25px;
+  }
+  
+  .title-wrapper {
+    width: 300px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .subtitle-wrapper {
+    width: 280px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .wrapper img {
+    max-width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.impact-section {
+  position: relative;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+.impact-bg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.impact-bg-image {
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.impact-container {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 240px;
+  z-index: 1;
+}
+
+.impact-title {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 400px;
+  color: white;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 69.66px;
+  margin: 0;
+  align-self: stretch;
+}
+
+.impact-stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-card {
+  flex: 1;
+  padding: 25px;
+  background: rgba(39, 39, 39, 0.6);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+}
+
+.stat-label {
+  opacity: 0.7;
+  color: white;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 23.63px;
+  margin: 0;
+}
+
+.stat-value {
+  color: #BEB2A2;
+  font-size: 45px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 54px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .impact-container {
+    padding: 60px 120px;
+  }
+  
+  .impact-stats {
+    flex-direction: column;
+  }
+  
+  .stat-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-container {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+  
+  .impact-title {
+    width: 100%;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  
+  .impact-bg-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.common-air-section {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+background-color: #E0E0E0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  background-image: url("../img/pages2/Frame 195.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 0; /* Добавляем отступы сверху и снизу */
+}
+
+.common-air-header {
+  margin-top: 100px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  position: relative; /* Добавляем для корректного отображения поверх фона */
+  z-index: 1; /* Убедимся, что контент над фоном */
+}
+
+.common-air-title {
+  width: 940px;
+  text-align: center;
+  color: #17161B;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 69.66px;
+  margin: 0;
+}
+
+.common-air-solutions {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative; /* Добавляем для корректного отображения поверх фона */
+  z-index: 1; /* Убедимся, что контент над фоном */
+  padding: 0 20px; /* Добавляем боковые отступы */
+  margin-top: 40px; /* Отступ от заголовка */
+}
+
+.common-air-card {
+  flex: 1;
+  padding: 30px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 13px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.card-icon {
+  position: relative;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card-title {
+  align-self: stretch;
+  color: #0B0B0B;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 31.44px;
+  margin: 0;
+}
+
+.card-description {
+  align-self: stretch;
+  opacity: 0.80;
+  color: #0B0B0B;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22.50px;
+  margin: 0;
+}
+
+
+
+
+/* Мобильные стили (до 768px) */
+@media (max-width: 768px) {
+  .common-air-section {
+    padding: 20px 0; /* Уменьшаем отступы */
+    background-image: none; /* Можно убрать фоновое изображение на мобильных */
+  }
+  
+  .common-air-header {
+    margin-top: 40px; /* Уменьшаем отступ сверху */
+  }
+  
+  .common-air-title {
+    width: 100%; /* Занимает всю ширину */
+    padding: 0 20px; /* Добавляем боковые отступы */
+    font-size: 32px; /* Уменьшаем размер шрифта */
+    line-height: 42px; /* Уменьшаем межстрочный интервал */
+  }
+  
+  .common-air-solutions {
+    flex-direction: column; /* Карточки в колонку */
+    gap: 20px; /* Уменьшаем промежуток между карточками */
+    padding: 0 15px; /* Уменьшаем боковые отступы */
+    margin-top: 30px; /* Уменьшаем отступ от заголовка */
+  }
+  
+  .common-air-card {
+    width: 100%; /* Карточка на всю ширину */
+    margin-bottom: 0; /* Убираем нижний отступ */
+    padding: 20px; /* Уменьшаем внутренние отступы */
+  }
+  
+  .card-title {
+    font-size: 20px; /* Уменьшаем размер заголовка */
+    line-height: 26px;
+  }
+  
+  .card-description {
+    font-size: 14px; /* Уменьшаем размер текста */
+    line-height: 20px;
+  }
+}
+
+/* Планшеты (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .common-air-title {
+    width: 90%;
+    font-size: 42px;
+    line-height: 54px;
+  }
+  
+  .common-air-solutions {
+    flex-wrap: wrap; /* Перенос карточек на новую строку */
+    justify-content: center;
+  }
+  
+  .common-air-card {
+    flex: 0 0 calc(50% - 15px); /* 2 карточки в ряд */
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.news-section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-self: stretch;
+  padding-left: 240px;
+  padding-right: 240px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  display: inline-flex;
+}
+
+.news-header {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  display: flex;
+}
+
+.news-title {
+margin: 0 auto;
+
+  text-align: center;
+  color: #17161B;
+  font-size: 54px;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: 69.66px;
+  word-wrap: break-word;
+}
+
+.news-content {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.news-cards {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  display: inline-flex;
+}
+
+.news-card {
+  width: 338px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  display: inline-flex;
+}
+
+.card-image {
+  width: 338px;
+  height: 194px;
+  border-radius: 15px;
+}
+
+.card-content {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: flex;
+}
+
+.card-title {
+  align-self: stretch;
+  color: #242424;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.card-description {
+  align-self: stretch;
+  height: 45px;
+  opacity: 0.60;
+  color: #17161B;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+.read-more {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+  display: inline-flex;
+}
+
+.read-more-text {
+  border-bottom: 1px rgba(95, 10, 0, 0.25) solid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  color: #5F0A00;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 20.85px;
+  word-wrap: break-word;
+}
+
+.news-pagination {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.pagination-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.pagination-dot.inactive {
+  opacity: 0.2;
+  background: #0B0B0B;
+}
+
+.pagination-dot.active {
+  width: 22px;
+  background: #5F0A00;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .news-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 30px;
+  }
+  
+  .news-title {
+    font-size: 32px;
+    line-height: 41.28px;
+  }
+  
+  .news-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-card {
+    width: 100%;
+    max-width: 338px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 338/194;
+  }
+  
+  .card-description {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .more-news-button {
+    width: 100%;
+    max-width: 338px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .news-title {
+    font-size: 28px;
+    line-height: 36.12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.air-freight-section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-self: stretch;
+  padding-left: 363px;
+  padding-right: 363px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  background: #17161B;
+  overflow: hidden;
+  background-image: url(../img/pages2/Frame\ 198.png);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  display: inline-flex;
+}
+
+.background-curve {
+  position: absolute;
+  opacity: 0.10;
+  overflow: hidden;
+}
+
+.right-curve {
+  width: 730px;
+  height: 629px;
+  left: 1350px;
+  top: -405px;
+}
+
+.left-curve {
+  width: 730px;
+  height: 629px;
+  left: 107px;
+  top: 151px;
+}
+
+.rotated-curve {
+  width: 272.47px;
+  height: 568.97px;
+  left: 182.82px;
+  top: -326px;
+  transform: rotate(27deg);
+  transform-origin: top left;
+}
+
+.air-freight-header {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  display: flex;
+}
+
+.air-freight-title {
+  width: 870px;
+  text-align: center;
+  color: white;
+  font-size: 54px;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: 69.66px;
+  word-wrap: break-word;
+}
+
+.faq-container {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  display: flex;
+}
+
+.faq-item {
+  align-self: stretch;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: #201F24;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+}
+
+.faq-item.active {
+  outline: 2px #5F0A00 solid;
+  outline-offset: -2px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.faq-question {
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+}
+
+.question-text {
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 28.50px;
+  word-wrap: break-word;
+}
+
+.toggle-icon {
+  padding: 10px;
+  border-radius: 900px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.faq-item.active .toggle-icon {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.faq-answer {
+  align-self: stretch;
+  opacity: 0.70;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 1200px) {
+  .air-freight-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 30px;
+  }
+  
+  .background-curve {
+    display: none; /* Скрываем сложные фоновые элементы на мобильных */
+  }
+  
+  .air-freight-title {
+    width: 100%;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  
+  .faq-container {
+    width: 100%;
+  }
+  
+  .faq-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .question-text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+  
+  .faq-answer {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .air-freight-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+  
+  .air-freight-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .faq-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .faq-item.active {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .toggle-icon {
+    padding: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.airfreight-banner {
+  align-self: stretch;
+  padding: 100px 363px;
+  position: relative;
+  background-image: url(../img/pages2/Frame\ 199.png);
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+.airfreight-banner__decoration {
+  position: absolute;
+  left: 886px;
+  top: -205px;
+}
+
+.airfreight-banner__content {
+  width: 605px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.airfreight-banner__text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.airfreight-banner__title {
+  color: white;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 69.66px;
+}
+
+.airfreight-banner__description {
+  color: white;
+  opacity: 0.70;
+  font-size: 19px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 28.50px;
+}
+
+.airfreight-banner__cta-button {
+  width: 250px;
+  padding: 21px 29px;
+  background: #0B0B0B;
+  border-radius: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.airfreight-banner__button-text {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 20.85px;
+}
+
+.airfreight-banner__button-icon {
+  display: flex;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 1200px) {
+  .airfreight-banner {
+    padding: 80px 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .airfreight-banner__decoration {
+    display: none; /* Скрываем декоративный элемент на мобильных */
+  }
+  
+  .airfreight-banner__content {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .airfreight-banner__text-group {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .airfreight-banner {
+    padding: 60px 20px;
+  }
+  
+  .airfreight-banner__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  
+  .airfreight-banner__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .airfreight-banner__cta-button {
+    width: 100%;
+    max-width: 280px;
+    padding: 16px 24px;
+  }
+  
+  .airfreight-banner__content {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .airfreight-banner__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .airfreight-banner__description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .airfreight-banner__text-group {
+    gap: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Общий контейнер футера */
+.footer-container {
+  padding: 60px 240px;
+  background: #0B0B0B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Логотипы и SVG wrappers */
+.footer-logo-container {
+  position: relative;
+}
+
+/* Обертка для логотипа */
+.footer-logo-svg {
+  width: 300px;
+}
+
+/* Основной контент с колонками */
+.footer-content {
+  width: 100%;
+  padding: 60px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: calc(33.333% - 20px);
+}
+
+.footer-column-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  cursor: pointer; /* Для мобильной версии */
+}
+
+.footer-column-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  line-height: 21px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+  color: white;
+}
+
+/* Нижняя часть футера */
+.footer-bottom-section {
+  width: 100%;
+  padding: 40px 0;
+  border-top: 1px rgba(255, 255, 255, 0.07) solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Авторские права */
+.footer-copyright {
+  color: white;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* Иконки соцсетей */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 40px;
+}
+
+/* Стиль иконок */
+.footer-icon {
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Текст "Developed by" */
+.developed-by-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  opacity: 0.7;
+}
+
+/* Мобильная версия */
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 40px 20px;
+  }
+  
+  .footer-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .footer-column {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+  }
+  
+  .footer-column-list {
+    display: none; /* Скрываем список на мобильных */
+  }
+  
+  .footer-column-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-column-title::after {
+    content: '+';
+    font-size: 20px;
+    opacity: 0.7;
+  }
+  
+  .footer-column.active .footer-column-title::after {
+    content: '-';
+  }
+  
+  .footer-column.active .footer-column-list {
+    display: flex; /* Показываем список при активном состоянии */
+    padding-top: 15px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .footer-bottom-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Десктоп версия */
+@media (min-width: 1025px) {
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    width: calc(16.666% - 25px);
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .footer-logo-svg {
+    width: 200px;
+  }
+  
+  .footer-content {
+    padding: 30px 0;
+  }
 }
