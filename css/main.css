@@ -22,7 +22,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+
 }
 
 input,
@@ -1260,6 +1260,9 @@ table {
   .logistics-title {
     font-size: 36px;
     line-height: 1.3;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
   }
   
   .service-card {
@@ -1280,9 +1283,14 @@ table {
     padding-left: 20px;
     padding-right: 20px;
   }
+  
+  .logistics {
+margin-left: 350px;
+  }
 
   /* Заголовок и подзаголовок делают шире, чтобы занимать всю доступную ширину */
   .logistics-title {
+    
     width: 270px;
     margin: 0 auto;
     line-height: 1.3;
@@ -1292,7 +1300,7 @@ table {
   /* Подзаголовок */
   .logistics-subtitle {
     font-size: 16px;
-    line-height: 24px;
+    text-align: center;
   }
 
   /* Help button - уменьшаем отступы и размеры */
@@ -3157,7 +3165,7 @@ background-color: #E0E0E0;
 }
 
 .common-air-title {
-  width: 940px;
+  width: 750px;
   text-align: center;
   color: #17161B;
   font-size: 54px;
@@ -3907,53 +3915,6 @@ margin: 0 auto;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Общий контейнер футера */
 .footer-container {
   padding: 60px 240px;
@@ -4139,5 +4100,1829 @@ margin: 0 auto;
   
   .footer-content {
     padding: 30px 0;
+  }
+}
+
+
+
+
+
+.offer-container {
+  width: 134px;
+  height: 134px;
+  position: absolute;
+  right: 30px;
+  top: 260px;
+  z-index: 1;
+  box-shadow: 0px 11px 49px rgba(0, 0, 0, 0.13);
+}
+
+.offer-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.offer-arrow {
+  position: absolute;
+  left: 51.88px;
+  top: 50.44px;
+}
+
+.offer-text {
+  position: absolute;
+  left: 13.92px;
+  top: 13.92px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.calculate-ocean-container {
+  position: absolute;
+  right: -1280px;
+  top: 320px;
+  width: 522px;
+  padding: 35px;
+  position: relative;
+  background: linear-gradient(135deg, #511F1B 0%, #5F0B00 29%, #840600 56%, #B40000 78%, #521D18 92%, #AD0100 100%);
+  overflow: hidden;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  display: inline-flex;
+}
+
+.calculate-ocean-bg-pattern {
+  position: absolute;
+  left: -164.30px;
+  top: 200.07px;
+}
+
+.calculate-ocean-title {
+  align-self: stretch;
+  color: white;
+  font-size: 37px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 48.10px;
+  word-wrap: break-word;
+}
+
+.calculate-ocean-input-group {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: flex;
+}
+
+.calculate-ocean-input-label {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 22.24px;
+  word-wrap: break-word;
+}
+
+.calculate-ocean-input {
+  align-self: stretch;
+  padding: 24px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  outline: 1px rgba(255, 255, 255, 0.05) solid;
+  outline-offset: -1px;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+}
+
+.calculate-ocean-input.selected {
+  background: rgba(255, 255, 255, 0.01);
+  outline: 1px rgba(255, 255, 255, 0.22) solid;
+}
+
+.calculate-ocean-input-content {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  display: flex;
+}
+
+.calculate-ocean-input-text {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+}
+
+.calculate-ocean-input-text.placeholder {
+  opacity: 0.40;
+}
+
+.calculate-ocean-checkmark {
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 900px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 114px;
+  display: flex;
+}
+
+.calculate-ocean-button {
+  align-self: stretch;
+  padding: 25px 29px;
+  background: #0B0B0B;
+  border-radius: 900px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+}
+
+.calculate-ocean-button span {
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 22.24px;
+}
+
+.calculate-ocean-disclaimer {
+  align-self: stretch;
+  opacity: 0.80;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ocean-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: #000;
+  position: relative;
+}
+
+.ocean-background-img {
+  position: absolute;
+  right: -300px;
+  bottom: -30px;
+}
+
+.ocean-title {
+  position: absolute;
+  top: 50px;
+  left: 400px;
+  width: 500px;
+  color: white;
+}
+
+.ocean-title h1 {
+color: rgb(255, 255, 255);
+font-family: Libre Baskerville;
+font-size: 67px;
+font-weight: 400;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: left;
+padding: 0px;;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 15px 0px;
+}
+
+
+.ocean-title p {
+opacity:0.7;
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+padding: 0px;;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 15px 0px;
+}
+
+
+
+.ocean-title button {
+  color: white;
+background: rgb(95, 10, 0);
+border-radius: 900px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 25px 60px 25px 60px;;
+flex: none;
+order: 0;
+flex-grow: 0
+
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .ocean-container {
+    display: flex;
+    flex-direction: column; /* Swaps the order */
+  }
+
+  /* Styles for the text and button section */
+  .ocean-title {
+    order: 1; /* Place the text/button section first */
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+    .ocean-title h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .ocean-title p {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .ocean-title button {
+      padding: 16px 32px;
+      margin: 20px auto;
+    }
+
+
+  .calculate-ocean-container {
+    order: 2; /* Place the form at the bottom */
+    position: relative;
+    width: 370px;
+    max-width: 522px;
+    padding: 35px;
+    margin: 20px auto;
+    margin-top: 150px;
+    right: auto;
+    top: auto;
+  }
+
+    .calculate-ocean-title {
+      font-size: 28px;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    .calculate-ocean-input-label {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .calculate-ocean-input {
+      padding: 16px 12px;
+    }
+
+    .calculate-ocean-input-text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .calculate-ocean-checkmark {
+      gap: 10px;
+    }
+
+    .calculate-ocean-button {
+      padding: 16px 20px;
+    }
+
+      .calculate-ocean-button span {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+    .calculate-ocean-disclaimer {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+  /* General ocean container styles (if needed) */
+  .ocean-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+
+  }
+
+  .ocean-background-img {
+    right: 1px;
+    top: 250px;
+    width: 500px;
+
+  }
+
+
+
+  /* Hide .offer-container on mobile devices */
+  .offer-container {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.platton-ocean-container {
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1920px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.platton-ocean-backgorund-img {
+  position: absolute;
+}
+
+.platton-ocean-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.platton-ocean-title h1 {
+  
+
+color: rgb(23, 22, 27);
+font-family: Libre Baskerville;
+font-size: 54px;
+font-weight: 400;
+line-height: 129%;
+letter-spacing: 0%;
+text-align: center;
+padding: 0px;;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 15px 0px;
+
+}
+
+.platton-ocean-title p {
+  
+position: static;
+width: 1108px;
+height: 86px;
+opacity:0.7;
+color: rgb(23, 22, 27);
+font-family: Inter;
+font-size: 19px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding: 0px;;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 15px 0px;
+
+}
+
+
+
+.platton-ocean-cards {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.platton-ocean-cards-left-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.platton-ocean-cards-right-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+
+.platton-ocean-card {
+width: 705px;
+background: rgb(255, 255, 255);
+border: 1px solid rgb(242, 242, 242);
+border-radius: 18px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 25px;;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 30px;
+}
+
+.platton-ocean-card  h2 {
+  
+color: rgb(23, 22, 27);
+font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+padding: 0px;;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 4px 0px;
+
+}
+
+.platton-ocean-card h3 {
+  
+
+opacity:0.8;
+color: rgb(23, 22, 27);
+font-family: Inter;
+font-size: 17px;
+font-weight: 500;
+line-height: 139%;
+letter-spacing: 0%;
+text-align: left;
+padding: 0px;;
+flex: none;
+margin: 4px 0px;
+
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .platton-ocean-container {
+    padding-top: 50px;
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Автоматическая высота для адаптации контента */
+    margin: 0 auto;
+  }
+
+  .platton-ocean-backgorund-img {
+    position: static; /* Убираем абсолютное позиционирование */
+    width: 100%; /* Фон на всю ширину */
+    height: auto;
+    object-fit: cover; /* Обрезаем изображение для соответствия контейнеру */
+  }
+
+  .platton-ocean-title {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .platton-ocean-title h1 {
+    font-size: 32px; /* Уменьшаем размер заголовка */
+    text-align: center;
+    margin: 10px 0; /* Уменьшаем отступы */
+  }
+
+  .platton-ocean-title p {
+    font-size: 14px; /* Уменьшаем размер текста */
+    text-align: center;
+    width: 100%; /* Текст на всю ширину */
+    margin: 20px 0; /* Уменьшаем отступы */
+  }
+
+  .platton-ocean-cards {
+    flex-direction: column; /* Карточки в столбик */
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .platton-ocean-cards-left-side,
+  .platton-ocean-cards-right-side {
+    flex: none;
+    width: 100%;
+  }
+
+  .platton-ocean-card {
+    width: 100%; /* Карточка на всю ширину */
+    margin: 15px 0; /* Отступы сверху и снизу */
+  }
+
+  .platton-ocean-card h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .platton-ocean-card h3 {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+.hapag-lloyd {
+  display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+.shipments-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.shipments-container  h1 {
+padding-left: 100px;
+padding-bottom: 20px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 131%;
+color: #17161B;
+
+}
+
+
+.shipments-swiper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.shipments-slide-container {
+  width: 338px;
+  background: #17161B;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.shipments-slide-header {
+  align-self: stretch;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px rgba(255, 255, 255, 0.15) solid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: inline-flex;
+}
+
+.shipments-slide-origin,
+.shipments-slide-destination {
+  flex: 1 1 0;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 22.24px;
+  word-wrap: break-word;
+}
+
+.shipments-slide-content {
+  align-self: stretch;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+}
+
+.shipments-slide-details {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.shipments-slide-delivery-time {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  display: inline-flex;
+}
+
+.shipments-slide-label {
+  color: white;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+.shipments-slide-duration {
+  padding-left: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.shipments-slide-days {
+  opacity: 0.70;
+  color: #E0E0E0;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+.shipments-slide-button {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #5F0A00;
+  border-radius: 900px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+.shipments-slide-button-text {
+  color: white;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+
+@media (max-width: 767px) {
+
+.shipments-container  h1 {
+  padding-left: 10px;
+}
+
+
+.shipments-swiper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Predictive Logistics Styles */
+.predictive-logistics-container {
+  align-self: stretch;
+  padding: 90px 240px;
+  background: #17161B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.predictive-logistics-header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.predictive-logistics-title {
+  width: 954px;
+  text-align: center;
+  color: white;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 69.66px;
+}
+
+.predictive-logistics-content {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.predictive-logistics-features {
+  width: 338px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-card {
+  padding: 20px;
+  background: rgba(39, 39, 39, 0.6);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.feature-icon {
+  position: relative;
+}
+
+.feature-text {
+  flex: 1;
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  line-height: 22.50px;
+}
+
+.feature-bold {
+  font-weight: 700;
+}
+
+.predictive-logistics-graphs {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.graph-card {
+  flex: 1;
+  height: 367px;
+  padding: 24px;
+  background: #0B0B0B;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.graph-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.graph-title {
+  color: white;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 23.63px;
+}
+
+.graph-value {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 8px;
+  color: white;
+  font-size: 34px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.positive-trend {
+  color: #11B146;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.negative-trend {
+  color: #D72600;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.savings-bubble {
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  background: rgba(39, 39, 39, 0.6);
+  box-shadow: 5px 15px 23px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  outline: 1px solid rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.savings-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  line-height: 22.50px;
+}
+
+.savings-amount {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.savings-amount div:first-child {
+  color: #BEB2A2;
+  font-size: 35px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.savings-amount div:last-child {
+  width: 49px;
+  opacity: 0.4;
+  color: white;
+  font-size: 13px;
+  line-height: 19.50px;
+}
+
+.predictive-logistics-cta {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.cta-text {
+  color: white;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 31.44px;
+}
+
+.cta-button {
+  width: 230px;
+  padding: 25px 37px;
+  background: #5F0A00;
+  border-radius: 900px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 20.85px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button svg {
+  margin-left: 6px;
+}
+
+
+
+@media (max-width: 767px) {
+  .predictive-logistics-container {
+    padding: 40px 20px; /* Уменьшаем отступы для мобильных */
+    gap: 20px;
+  }
+
+  .predictive-logistics-header {
+    gap: 10px;
+  }
+
+  .predictive-logistics-title {
+    width: 100%;
+    font-size: 28px; /* Уменьшаем размер заголовка */
+    line-height: 34px;
+  }
+
+  .predictive-logistics-content {
+    flex-direction: column; /* Колонки в столбик */
+    gap: 20px;
+  }
+
+  .predictive-logistics-features {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .feature-card {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .feature-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .predictive-logistics-graphs {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .graph-container svg {
+    width: 300px;
+  }
+
+
+  .graph-card {
+    width: 100%;
+    height: auto; /* Автоматическая высота */
+    padding: 20px;
+    gap: 24px;
+  }
+
+  .graph-title {
+    font-size: 16px;
+  }
+
+  .graph-value {
+    font-size: 28px;
+    gap: 6px;
+  }
+
+  .positive-trend,
+  .negative-trend {
+    font-size: 12px;
+  }
+
+  .savings-bubble {
+    position: static; /* Убираем абсолютное позиционирование */
+    margin-top: 10px;
+    box-shadow: none;
+    backdrop-filter: none;
+    padding: 15px;
+    outline: none;
+    border-radius: 12px;
+  }
+
+  .savings-header {
+    font-size: 14px;
+  }
+
+  .savings-amount div:first-child {
+    font-size: 28px;
+  }
+
+  .savings-amount div:last-child {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .predictive-logistics-cta {
+    gap: 16px;
+  }
+
+  .cta-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 18px 0;
+    font-size: 14px;
+  }
+
+  .cta-button svg {
+    margin-left: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.website-simplifies-container {
+display: flex;
+justify-content: center;
+padding-top: 100px;
+background-image: url(../img/pages3/Frame\ 286.png);
+flex-direction: column;
+align-items: center;
+gap: 40px;
+
+}
+
+.website-simplifies-header {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+
+.website-simplifies-title {
+  width: 954px;
+  text-align: center;
+  color: #17161B;
+  font-size: 54px;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: 69.66px;
+  word-wrap: break-word;
+}
+
+.website-simplifies-features {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  display: inline-flex;
+}
+
+.website-simplifies-feature {
+  width: 331px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+
+.website-simplifies-feature-text {
+  flex: 1 1 0;
+  color: #17161B;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 25.02px;
+  word-wrap: break-word;
+}
+
+.website-simplifies-demo {
+  width: 1333px;
+  height: 575px;
+  position: relative;
+  background: #EDEDED;
+  box-shadow: 0px -6px 35px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.website-simplifies-cta {
+  width: 230px;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  left: 551.50px;
+  top: 444px;
+  position: absolute;
+  background: #5F0A00;
+  border-radius: 900px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+}
+
+.website-simplifies-cta-text {
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 20.85px;
+  word-wrap: break-word;
+}
+
+.website-simplifies-demo-image {
+
+
+  position: absolute;
+}
+
+
+@media (max-width: 767px) {
+  .website-simplifies-container {
+    padding-top: 40px;
+    gap: 20px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .website-simplifies-header {
+    gap: 10px;
+  }
+
+  .website-simplifies-title {
+    width: 90%;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .website-simplifies-features {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex; /* заменяем inline-flex на flex для лучшей поддержки */
+  }
+
+  .website-simplifies-feature {
+    width: 100%;
+    max-width: 350px;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .website-simplifies-feature-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .website-simplifies-demo {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .website-simplifies-demo-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  .website-simplifies-cta {
+    position: static; /* Убираем абсолютное позиционирование */
+    width: 100%;
+    max-width: 230px;
+    margin: 20px auto 0;
+    padding: 18px 0;
+    border-radius: 900px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .website-simplifies-cta-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ocean-freight-section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-self: stretch;
+  padding-left: 363px;
+  padding-right: 363px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/pages3/Frame\ 198.png);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  display: inline-flex;
+}
+
+
+
+
+
+.platton-faq-container {
+  align-self: stretch;
+  padding: 25px 18px;
+  background: #201F24;
+  border-radius: 10px;
+  outline: 2px #5F0A00 solid;
+  outline-offset: -2px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.platton-faq-header {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.platton-faq-question {
+  width: 648px;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 28.50px;
+  word-wrap: break-word;
+}
+
+.platton-faq-toggle {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 900px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 311px;
+}
+
+.platton-toggle-wrapper {
+  position: relative;
+}
+
+.platton-faq-description {
+  align-self: stretch;
+  opacity: 0.70;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+.platton-faq-items {
+  align-self: stretch;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.platton-faq-item {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+}
+
+.platton-icon-wrapper {
+  /* SVG wrapper styles if needed */
+}
+
+.platton-item-text {
+  opacity: 0.70;
+}
+
+.platton-item-label {
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+.platton-item-value {
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+.platton-faq-footer {
+  align-self: stretch;
+  opacity: 0.70;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+
+
+@media (max-width: 767px) {
+  .ocean-freight-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 100%;
+    display: flex; /* inline-flex заменен на flex для лучшей поддержки */
+    flex-direction: column;
+    gap: 30px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .platton-faq-container {
+    padding: 20px;
+    border-radius: 10px;
+    outline-offset: 0;
+    display: flex; /* inline-flex заменен на flex */
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .platton-faq-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .platton-faq-question {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .platton-faq-toggle {
+    gap: 10px;
+    padding: 8px;
+    justify-content: space-between;
+  }
+
+  .platton-faq-items {
+    padding-left: 0;
+    gap: 10px;
+  }
+
+  .platton-faq-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .platton-item-text,
+  .platton-item-label,
+  .platton-item-value {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .platton-faq-footer {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.partner-platton-container {
+  width: 100%;
+  max-width: 1920px;
+  align-self: stretch;
+  background-image: url(../img/pages3/Frame\ 199-back.png);
+  padding: 100px 363px;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  display: inline-flex;
+}
+
+.partner-platton-content {
+  width: 686px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  display: inline-flex;
+}
+
+.partner-platton-header {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  display: flex;
+}
+
+.partner-platton-title {
+  align-self: stretch;
+  color: white;
+  font-size: 54px;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: 69.66px;
+  word-wrap: break-word;
+}
+
+.partner-platton-features {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  display: inline-flex;
+}
+
+.partner-platton-feature {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  display: flex;
+}
+
+.partner-platton-feature-icon {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 900px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 311px;
+  display: flex;
+}
+
+.partner-platton-feature-text {
+  flex: 1 1 0;
+  opacity: 0.70;
+  color: white;
+  font-size: 17px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 23.63px;
+  word-wrap: break-word;
+}
+
+.partner-platton-signup-btn {
+  padding: 21px 29px;
+  background: #0B0B0B;
+  border-radius: 900px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+}
+
+.partner-platton-signup-btn span {
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 20.85px;
+  word-wrap: break-word;
+}
+
+.partner-platton-signup-btn svg {
+  display: block;
+}
+
+
+@media (max-width: 767px) {
+  .partner-platton-container {
+    padding: 40px 20px;
+    height: 800px;
+    background-image: url(../img/pages3/Frame\ 199-back-mob.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex; /* заменяем inline-flex на flex для лучшей поддержки */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .partner-platton-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    display: flex; /* заменяем inline-flex на flex */
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .partner-platton-header {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .partner-platton-title {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .partner-platton-features {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .partner-platton-feature {
+    gap: 10px;
+  }
+
+  .partner-platton-feature-icon {
+    padding: 8px;
+    gap: 10px;
+  }
+
+  .partner-platton-feature-text {
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.7;
+  }
+
+  .partner-platton-signup-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 18px 0;
+    justify-content: center;
+  }
+
+  .partner-platton-signup-btn span {
+    font-size: 14px;
   }
 }
