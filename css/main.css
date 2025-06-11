@@ -3076,6 +3076,12 @@ text-align: center;
 }
 
 @media (max-width: 768px) {
+
+.svg-tab {
+  width: 300px;
+}
+
+
   .impact-container {
     padding: 40px 20px;
     flex-direction: column;
@@ -7818,7 +7824,7 @@ gap: 40px;
 position: absolute;
 z-index: 1;
 top: 700px;
-right: -1px;
+right: px;
 }
 
   .trucking-optimization {
@@ -8220,7 +8226,6 @@ right: -1px;
     padding: 40px 20px;
     height: 800px;
     background-image: url(../img/pages4/back-truck-down-mob.png);
-    width: 100%;
     background-position: center;
     background-size: cover;
     display: flex;
