@@ -738,6 +738,7 @@ table {
   
   .cta-box {
     padding: 15px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
   }
@@ -4310,8 +4311,8 @@ margin: 0 auto;
 
 .ocean-title {
   position: absolute;
-  top: 50px;
-  left: 400px;
+  top: 200px;
+  left: 300px;
   width: 500px;
   color: white;
 }
@@ -5923,6 +5924,2372 @@ gap: 40px;
   }
 
   .partner-platton-signup-btn span {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------4 pages------------------------------------*/
+
+
+
+
+
+
+
+.ocean-background-truck-img {
+  position: absolute;
+  right: 1px;
+  bottom: -30px;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+ 
+  .ocean-background-truck-img {
+    right: 1px;
+    top: 250px;
+    width: 500px;
+
+  }
+
+}
+
+
+
+/* Section container */
+.truck-why-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Для обрезки фона если нужно */
+  margin-top: 100px;
+}
+
+/* Background image */
+.truck-why-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Content container */
+.truck-why-container {
+  position: relative;
+  z-index: 2;
+  padding: 120px 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Header section */
+.truck-why-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.truck-why-title {
+  color: #17161B;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.truck-why-subtitle {
+  color: #17161B;
+  font-size: 19px;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.7;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 700px;
+}
+
+/* Cards container */
+.truck-why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual cards */
+.truck-why-card {
+  width: 338px;
+  padding: 25px;
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.truck-why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.truck-card-icon {
+  width: 54px;
+  height: 54px;
+}
+
+.truck-card-title {
+  color: #17161B;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.truck-card-desc {
+  color: #17161B;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.7;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1600px) {
+  .truck-why-container {
+    padding: 100px 180px;
+  }
+  
+  .truck-why-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .truck-why-container {
+    padding: 80px 120px;
+  }
+  
+  .truck-why-card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .truck-why-container {
+    padding: 70px 80px;
+    gap: 30px;
+  }
+  
+  .truck-why-title {
+    font-size: 42px;
+  }
+  
+  .truck-why-subtitle {
+    font-size: 17px;
+  }
+  
+  .truck-why-cards {
+    gap: 20px;
+  }
+  
+  .truck-why-card {
+    width: calc(50% - 20px); /* 2 карточки в ряд */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .truck-why-container {
+    padding: 60px 40px;
+  }
+  
+  .truck-why-title {
+    font-size: 36px;
+  }
+  
+  .truck-why-subtitle {
+    font-size: 16px;
+  }
+  
+  .truck-why-header {
+    gap: 12px;
+  }
+  
+  .truck-card-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .truck-why-container {
+    padding: 50px 20px;
+    gap: 25px;
+  }
+  
+  .truck-why-title {
+    font-size: 32px;
+  }
+  
+  .truck-why-subtitle {
+    font-size: 15px;
+  }
+  
+  .truck-why-card {
+    width: 100%; /* 1 карточка в ряд */
+    padding: 20px;
+  }
+  
+  .truck-card-title {
+    font-size: 17px;
+  }
+  
+  .truck-card-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .truck-why-title {
+    font-size: 28px;
+  }
+  
+  .truck-why-subtitle {
+    font-size: 14px;
+  }
+  
+  .truck-why-header {
+    gap: 10px;
+  }
+  
+  .truck-why-container {
+    gap: 20px;
+  }
+}
+
+
+
+.help-button-truck {
+  position: absolute;
+  right: -10px;
+  top: 100px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.help-button-truck__circle {
+  width: 72px;
+  height: 72px;
+  background: #5F0A00;
+  box-shadow: 0px 0px 27px rgba(95, 10, 0, 0.12);
+  border-radius: 900px;
+  outline: 5px rgba(95, 10, 0, 0.10) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-button-truck__icon-wrapper {
+  position: relative;
+}
+
+.help-button-truck__text {
+  width: 107px;
+  color: #242424;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 19.20px;
+  word-wrap: break-word;
+}
+
+
+
+@media (max-width: 768px) { 
+
+  .help-button-truck {
+    display: none;
+  }
+  
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.freight-solutions-container {
+  width: 100%;
+  max-width: 1920px;
+  align-self: stretch;
+  padding: 60px 20px;
+  background: #F9F9F9;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  display: inline-flex;
+}
+
+.freight-solutions-header {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+
+.freight-solutions-title {
+  width: 100%;
+  max-width: 880px;
+  text-align: center;
+  color: #17161B;
+  font-size: 32px;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: 1.3;
+  word-wrap: break-word;
+  padding: 0 20px;
+}
+
+.freight-solutions-subtitle {
+  width: 100%;
+  max-width: 740px;
+  opacity: 0.70;
+  text-align: center;
+  color: #17161B;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  padding: 0 20px;
+}
+
+.freight-solutions-content {
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trucking-lanes-card {
+  width: 100%;
+  max-width: 338px;
+  background: white;
+  border-radius: 18px;
+  outline: 1px #F2F2F2 solid;
+  outline-offset: -1px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+
+
+
+
+/* Стили для десктопной версии (по умолчанию) */
+.desktop-image {
+  display: block;
+}
+
+.mobile-image {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .freight-solutions-container {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  
+  .freight-solutions-title {
+    font-size: 28px;
+  }
+  
+  .freight-solutions-subtitle {
+    font-size: 14px;
+  }
+  
+  .freight-solutions-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .trucking-lanes-card {
+    width: 100%;
+  }
+  
+  /* Переключаем изображения для мобильной версии */
+  .desktop-image {
+    display: none;
+  }
+  
+  .mobile-image {
+    display: block;
+  }
+  
+  /* Дополнительные стили для мобильной версии */
+  .card-header {
+    padding: 20px;
+  }
+  
+  .lane-item {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  
+  .lane-name {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .lane-distance {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+
+
+
+
+.TRUCK-section {
+  position: relative;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+.TRUCK-bg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.TRUCK-bg-image {
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.TRUCK-container {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 240px;
+  z-index: 1;
+}
+
+.TRUCK-title {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 400px;
+  color: white;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 69.66px;
+  margin: 0;
+  align-self: stretch;
+}
+
+.TRUCK-stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.TRUCK-card {
+  flex: 1;
+  padding: 25px;
+  background: rgba(39, 39, 39, 0.6);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.TRUCK-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.TRUCK-icon {
+  display: flex;
+  align-items: center;
+}
+
+.TRUCK-label {
+  opacity: 0.7;
+  color: white;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 23.63px;
+  margin: 0;
+}
+
+.TRUCK-value {
+  color: #BEB2A2;
+  font-size: 45px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 54px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .TRUCK-container {
+    padding: 60px 120px;
+  }
+  
+  .TRUCK-stats {
+    flex-direction: column;
+  }
+  
+  .TRUCK-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .TRUCK-container {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+  
+  .TRUCK-title {
+    width: 100%;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  
+  .TRUCK-bg-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.optimization-section {
+  background: #17161B;
+  position: relative;
+  overflow: hidden;
+}
+
+.optimization-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 90px 240px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.decorative-shape {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0.2;
+}
+
+.decorative-shape-1 {
+  width: 272.47px;
+  height: 568.97px;
+  left: -35px;
+  top: 690.42px;
+  transform: rotate(-27deg);
+}
+
+.decorative-shape-2 {
+  width: 730px;
+  height: 629px;
+  right: -240px;
+  top: -75px;
+  opacity: 0.3;
+}
+
+.section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-title {
+  width: 954px;
+  text-align: center;
+  color: white;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 69.66px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.features-column {
+  width: 283px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-card {
+  flex: 1;
+  padding: 20px;
+  background: rgba(39, 39, 39, 0.6);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.feature-text {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.stats-container {
+  width: 573px;
+  height: 486px;
+  position: relative;
+}
+
+.route-stats-card {
+  width: 417px;
+  height: 367px;
+  padding: 24px;
+  padding-bottom: 48px;
+  position: absolute;
+  left: 77px;
+  top: 54px;
+  background: #0B0B0B;
+  border-radius: 16px;
+  outline: 1.5px rgba(255, 255, 255, 0.42) solid;
+  outline-offset: -1.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.stats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats-title {
+  color: white;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 23.63px;
+}
+
+.stats-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.value {
+  color: white;
+  font-size: 34px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.percentage {
+  color: #11B146;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.fuel-saved-card {
+  width: 281px;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(39, 39, 39, 0.6);
+  box-shadow: 5px 15px 23px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  outline: 1px rgba(255, 255, 255, 0.13) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.fuel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fuel-icon svg {
+  width: 20px;
+  height: 21px;
+  opacity: 0.3;
+}
+
+.fuel-label {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.fuel-value {
+  color: #BEB2A2;
+  font-size: 35px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.profit-card {
+  padding: 20px;
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  background: rgba(39, 39, 39, 0.6);
+  box-shadow: 5px 15px 23px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  outline: 1px rgba(255, 255, 255, 0.13) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profit-circle {
+  width: 149px;
+  height: 149px;
+  background: #E94F18;
+  box-shadow: 0px 0px 17px rgba(233, 79, 24, 0.4);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.profit-circle::before {
+  content: '';
+  position: absolute;
+  width: 144.9px;
+  height: 144.9px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.profit-circle::after {
+  content: '';
+  position: absolute;
+  width: 128.52px;
+  height: 128.52px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50%;
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+}
+
+.profit-label {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+.profit-value {
+  color: white;
+  font-size: 41px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calculator-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calculator-card {
+  width: 522px;
+  padding: 35px;
+  position: relative;
+  background: linear-gradient(135deg, #511F1B 0%, #5F0B00 29%, #840600 56%, #B40000 78%, #521D18 92%, #AD0100 100%);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.calculator-title {
+  color: white;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 31.44px;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.input-label {
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 22.24px;
+  text-align: center;
+}
+
+.location-input {
+  width: 100%;
+  padding: 24px 20px;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  outline: 1px rgba(255, 255, 255, 0.22) solid;
+  outline-offset: -1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location-input.selected {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.location-icon svg {
+  width: 16px;
+  height: 17px;
+}
+
+.location-text {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.placeholder {
+  opacity: 0.4;
+}
+
+.checkmark {
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.checkmark svg {
+  width: 15px;
+  height: 15px;
+}
+
+.calculate-button {
+  width: 100%;
+  padding: 25px 29px;
+  background: #0B0B0B;
+  border-radius: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.calculate-button span {
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 22.24px;
+}
+
+.calculate-button svg {
+  width: 19px;
+  height: 18px;
+}
+
+.calculator-disclaimer {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.coming-soon-banner {
+  padding: 13px;
+  position: absolute;
+  left: 193px;
+  top: -37px;
+  background: #BEB2A2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.coming-soon-text {
+  color: white;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 23.63px;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-text {
+  width: 152px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.contact-button {
+  padding: 10px 15px;
+  background: #17161B;
+  border-radius: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button span {
+  color: white;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 19.5px;
+}
+
+.contact-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.platton-features-container {
+  width: 283px;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  display: inline-flex;
+}
+
+.platton-feature-card {
+  align-self: stretch;
+  flex: 1 1 0;
+  padding: 20px;
+  background: rgba(39.31, 39.31, 39.31, 0.60);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 11px;
+  display: flex;
+}
+
+.platton-feature-icon {
+  position: relative;
+}
+
+.platton-feature-description {
+  align-self: stretch;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+/* Adjustments for specific cards */
+.platton-feature-card:nth-child(2),
+.platton-feature-card:nth-child(3) {
+  gap: 16px;
+}
+
+
+
+
+
+
+
+.fuel-savings-card {
+  width: 281px;
+  padding: 20px;
+  background: rgba(39.31, 39.31, 39.31, 0.60);
+  box-shadow: 5px 15px 23px rgba(0, 0, 0, 0.50);
+  border-radius: 12px;
+  outline: 1px rgba(255, 255, 255, 0.13) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(10px);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3px;
+  display: inline-flex;
+}
+
+.fuel-savings-content {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3px;
+  display: inline-flex;
+}
+
+.fuel-savings-header {
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+}
+
+.fuel-icon {
+  position: relative;
+  opacity: 0.3;
+}
+
+.fuel-savings-label {
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+}
+
+.fuel-savings-amount {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+  color: #BEB2A2;
+  font-size: 35px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.fuel-savings-chart {
+  width: 91px;
+  height: 65px;
+  position: relative;
+}
+
+.chart-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+}
+
+.chart-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trucking-optimization {
+  width: 100%;
+  max-width: 1920px;
+  align-self: stretch;
+  padding: 90px 240px;
+  position: relative;
+  background: #17161B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.decorative-shapes .shape-1 {
+  width: 272.47px;
+  height: 568.97px;
+  position: absolute;
+  left: -35px;
+  top: 690.42px;
+  transform: rotate(-27deg);
+  opacity: 0.2;
+  overflow: hidden;
+}
+
+.decorative-shapes .shape-2 {
+  width: 730px;
+  height: 629px;
+  position: absolute;
+  right: -240px;
+  top: -75px;
+  opacity: 0.3;
+  overflow: hidden;
+}
+
+.section-header {
+  width: 100%;
+  text-align: center;
+}
+
+.section-header h2 {
+  color: white;
+  font-size: 54px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 69.66px;
+  margin: 0;
+}
+
+.optimization-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.benefits-list {
+  width: 283px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefit-card {
+  flex: 1;
+  padding: 20px;
+  background: rgba(39, 39, 39, 0.6);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.benefit-card p {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  line-height: 22.5px;
+  margin: 0;
+}
+
+.optimization-stats {
+  width: 573px;
+  height: 486px;
+  position: relative;
+}
+
+.main-stat-card {
+  width: 417px;
+  height: 367px;
+  padding: 24px;
+  position: absolute;
+  left: 77px;
+  top: 54px;
+  background: #0B0B0B;
+  border-radius: 16px;
+  outline: 1.5px rgba(255, 255, 255, 0.42) solid;
+  outline-offset: -1.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.stat-header h3 {
+  color: white;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 23.63px;
+  margin: 0;
+}
+
+.stat-value {
+  color: white;
+  font-size: 34px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.stat-change {
+  color: #11B146;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.secondary-stat {
+  padding: 20px;
+  position: absolute;
+  background: rgba(39, 39, 39, 0.6);
+  box-shadow: 5px 15px 23px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  outline: 1px rgba(255, 255, 255, 0.13) solid;
+  outline-offset: -1px;
+  backdrop-filter: blur(10px);
+}
+
+.fuel-saved {
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.stat-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  line-height: 22.5px;
+}
+
+.stat-number {
+  color: #BEB2A2;
+  font-size: 35px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.total-profit {
+  left: 15px;
+  bottom: 0;
+}
+
+.stat-circle {
+  width: 149px;
+  height: 149px;
+  position: relative;
+
+  box-shadow: 0 0 17px rgba(233, 79, 24, 0.4);
+  border-radius: 9999px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+}
+
+.circle-value {
+  color: white;
+  font-size: 41px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.circle-label {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+  margin-top: 12px;
+}
+
+.cost-calculator {
+  position: relative;
+}
+
+.calculator-container {
+  width: 522px;
+  padding: 35px;
+  position: relative;
+   background: linear-gradient(135deg, #511F1B 0%, #5F0B00 29%, #840600 56%, #B40000 78%, #521D18 92%, #AD0100 100%);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 0.4;
+}
+
+.calculator-header h3 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 31.44px;
+  text-align: center;
+  margin: 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 22.24px;
+  text-align: center;
+}
+
+.location-input {
+  width: 100%;
+  padding: 24px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 6px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  outline: 1px rgba(255, 255, 255, 0.05) solid;
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.location-input.selected {
+  background: rgba(255, 255, 255, 0.01);
+  outline: 1px rgba(255, 255, 255, 0.22) solid;
+}
+
+.location-input span {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  line-height: 22.5px;
+  opacity: 0.4;
+}
+
+.location-input.selected span {
+  opacity: 1;
+}
+
+.checkmark {
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 900px;
+  margin-left: auto;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 25px 29px;
+  background: #0B0B0B;
+  border-radius: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 22.24px;
+  border: none;
+  cursor: pointer;
+}
+
+.calculator-disclaimer {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  line-height: 22.5px;
+  text-align: center;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.coming-soon-banner {
+  padding: 13px;
+  position: absolute;
+  left: 193px;
+  top: -37px;
+  background: #BEB2A2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner-content h4 {
+  color: white;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 23.63px;
+  margin: 0;
+}
+
+.banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-actions p {
+  width: 152px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0;
+}
+
+.contact-btn {
+  padding: 10px 15px;
+  background: #17161B;
+  border-radius: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 19.5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.delivery-calculator-container {
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.calculator-card {
+  width: 522px;
+  padding: 35px;
+  position: relative;
+  background: linear-gradient(135deg, #511F1B 0%, #5F0B00 29%, #840600 56%, #B40000 78%, #521D18 92%, #AD0100 100%);
+  overflow: hidden;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  display: inline-flex;
+}
+
+.decorative-line {
+  left: -164.30px;
+  top: 200.07px;
+  position: absolute;
+}
+
+.calculator-content {
+  align-self: stretch;
+  opacity: 0.40;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  display: flex;
+}
+
+.calculator-title {
+  align-self: stretch;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 31.44px;
+  word-wrap: break-word;
+}
+
+.input-section {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: flex;
+}
+
+.input-label {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 22.24px;
+  word-wrap: break-word;
+}
+
+.location-input {
+  align-self: stretch;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  outline: 1px rgba(255, 255, 255, 0.05) solid;
+  outline-offset: -1px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+}
+
+.location-input.selected {
+  background: rgba(255, 255, 255, 0.01);
+  outline: 1px rgba(255, 255, 255, 0.22) solid;
+  justify-content: space-between;
+}
+
+.location-icon-text {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  display: flex;
+}
+
+.location-icon {
+  position: relative;
+}
+
+.location-text {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+.placeholder-text {
+  opacity: 0.40;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+.checkmark-circle {
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 900px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 114px;
+  display: flex;
+}
+
+.checkmark-icon {
+  position: relative;
+}
+
+.calculate-button {
+  align-self: stretch;
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #0B0B0B;
+  border-radius: 900px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+}
+
+.button-text {
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 22.24px;
+  word-wrap: break-word;
+}
+
+.button-icon {
+  position: relative;
+}
+
+.disclaimer-text {
+  align-self: stretch;
+  opacity: 0.80;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+.coming-soon-badge {
+  padding: 13px;
+  left: 193px;
+  top: -37px;
+  position: absolute;
+  background: #BEB2A2;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  display: inline-flex;
+}
+
+.badge-title {
+  color: white;
+  font-size: 17px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 23.63px;
+  word-wrap: break-word;
+}
+
+.badge-content {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.badge-text {
+  width: 152px;
+  color: white;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+
+.contact-button {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #17161B;
+  border-radius: 900px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+/* Общие рекомендации для мобильных */
+@media (max-width: 768px) {
+  .coming-soon-banner {
+    display: none;
+  }
+
+.fuel-savings-card {
+position: absolute;
+z-index: 1;
+top: 700px;
+right: -1px;
+}
+
+  .trucking-optimization {
+    padding: 40px 20px; /* Уменьшаем отступы */
+    gap: 20px;
+  }
+
+  .section-header h2 {
+    font-size: 32px; /* Меньший размер заголовка */
+    line-height: 40px;
+  }
+
+  .optimization-content {
+    flex-direction: column; /* Вертикальное расположение блоков */
+    gap: 20px;
+  }
+
+  .benefits-list {
+    width: 100%; /* Ширина на всю доступную */
+  }
+
+  .benefit-card {
+    padding: 16px;
+  }
+
+  .optimization-stats {
+    width: 100%;
+    height: auto;
+    position: static; /* Убираем абсолютное позиционирование */
+  }
+
+  .main-stat-card {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 20px;
+    outline-offset: 0;
+  }
+
+  .secondary-stat {
+    position: static;
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .stat-value {
+    font-size: 24px; /* Уменьшаем размер цифр */
+  }
+
+  .stat-header h3 {
+    font-size: 15px;
+  }
+
+  .cost-calculator .calculator-container,
+  .calculator-card {
+    width: 100%; /* Ширина по ширине экрана */
+    padding: 20px;
+  }
+
+  /* Убираем абсолютные позиции для декоративных элементов */
+  .decorative-shapes .shape-1,
+  .decorative-shapes .shape-2 {
+    display: none;
+  }
+
+  /* Кнопки и интерактивные элементы делаем удобными для касания */
+  .calculate-btn,
+  .contact-btn {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  /* Текст делаем более читаемым */
+  .benefit-card p,
+  .stat-change,
+  .stat-label,
+  .stat-number,
+  .circle-value,
+  .circle-label {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+.platton-truck-freight-section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-self: stretch;
+  padding-left: 363px;
+  padding-right: 363px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/pages4/Frame198.png) ;
+  height: 700px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  display: inline-flex;
+}
+
+.platton-truck-header {
+  width: 100%;
+  text-align: center;
+}
+
+.platton-truck-title {
+  color: white;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.platton-truck-faq-container-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.platton-truck-faq-container {
+  align-self: stretch;
+  padding: 25px 18px;
+  background: #201F24;
+  border-radius: 10px;
+  outline: 2px #5F0A00 solid;
+  outline-offset: -2px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.platton-truck-faq-header {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.platton-truck-faq-question {
+  width: 648px;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 28.50px;
+  word-wrap: break-word;
+}
+
+.platton-truck-faq-toggle {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 900px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 311px;
+}
+
+.platton-truck-toggle-wrapper {
+  position: relative;
+}
+
+.platton-truck-faq-description {
+  align-self: stretch;
+  opacity: 0.70;
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+}
+
+.platton-truck-faq-item {
+  align-self: stretch;
+  padding: 20px;
+  background: #201F24;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.platton-truck-faq-question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.platton-truck-question-text {
+  color: white;
+  font-size: 17px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.platton-truck-toggle-icon {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .platton-truck-freight-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .platton-truck-title {
+    font-size: 24px;
+  }
+
+  .platton-truck-faq-container {
+    padding: 20px;
+    border-radius: 10px;
+    outline-offset: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .platton-truck-faq-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .platton-truck-faq-question {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .platton-truck-faq-toggle {
+    gap: 10px;
+    padding: 8px;
+    justify-content: space-between;
+  }
+
+  .platton-truck-faq-item {
+    padding: 15px;
+  }
+
+  .platton-truck-question-text {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.truck-partner-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  max-height: 845px;
+  background-size: cover;
+  align-self: stretch;
+  background-image: url(../img/pages4/back-truck-down.png);
+  padding: 100px 363px ;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  display: inline-flex;
+}
+
+.truck-partner-content {
+  width: 686px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  display: inline-flex;
+}
+
+.truck-partner-header {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  display: flex;
+}
+
+.truck-partner-title {
+  align-self: stretch;
+  color: white;
+  font-size: 54px;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: 69.66px;
+  word-wrap: break-word;
+}
+
+.truck-partner-features {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  display: inline-flex;
+}
+
+.truck-partner-feature {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  display: flex;
+}
+
+.truck-partner-feature-icon {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 900px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 311px;
+  display: flex;
+}
+
+.truck-partner-feature-text {
+  flex: 1 1 0;
+  opacity: 0.70;
+  color: white;
+  font-size: 17px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 23.63px;
+  word-wrap: break-word;
+}
+
+.truck-partner-signup-btn {
+  padding: 21px 29px;
+  background: #0B0B0B;
+  border-radius: 900px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+}
+
+.truck-partner-signup-btn span {
+  color: white;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 20.85px;
+  word-wrap: break-word;
+}
+
+.truck-partner-signup-btn svg {
+  display: block;
+}
+
+
+@media (max-width: 767px) {
+  .truck-partner-container {
+    padding: 40px 20px;
+    height: 800px;
+    background-image: url(../img/pages4/back-truck-down-mob.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .truck-partner-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .truck-partner-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding-top: 10px;
+   }
+
+  .truck-partner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .truck-partner-features {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .truck-partner-feature {
+    gap: 10px;
+  }
+
+  .truck-partner-feature-icon {
+    padding: 8px;
+    gap: 10px;
+  }
+
+  .truck-partner-feature-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    opacity: 0.7;
+  }
+
+  .truck-partner-signup-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 18px 0;
+    justify-content: center;
+  }
+
+  .truck-partner-signup-btn span {
     font-size: 14px;
   }
 }
