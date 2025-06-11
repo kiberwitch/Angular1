@@ -228,7 +228,7 @@ table {
 .features {
   display: flex;
   gap: 100px;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .feature-item {
@@ -879,6 +879,18 @@ table {
   }
 }
 
+
+
+
+
+
+
+.container-slider {
+  display: flex;
+  background: #17161B;
+  justify-content: center;
+  gap: 30px;
+}
 
 
 
@@ -6347,6 +6359,104 @@ gap: 40px;
 }
 
 
+.trucking-card {
+  width: 338px;
+  background: white;
+  border-radius: 18px;
+  outline: 1px solid #F2F2F2;
+  outline-offset: -1px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+}
+
+.trucking-card__header {
+  align-self: stretch;
+  padding: 30px;
+  border-bottom: 1px solid #F2F2F2;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.trucking-card__title {
+  color: #17161B;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.44px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.trucking-card__item {
+  align-self: stretch;
+  padding: 30px;
+  border-bottom: 1px solid #F2F2F2;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  background: white;
+}
+
+.trucking-card__item:last-child {
+  border-bottom: none;
+}
+
+.trucking-card__item--dark {
+  background: #17161B;
+  border-bottom: none;
+}
+
+.trucking-card__icon {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.trucking-card__content {
+  flex: 1 1 0;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  color: #17161B;
+}
+
+.trucking-card__content--white {
+  color: white;
+}
+
+.trucking-card__lane {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.24px;
+  word-wrap: break-word;
+}
+
+.trucking-card__item--dark .trucking-card__lane {
+  color: white;
+}
+
+.trucking-card__distance {
+  opacity: 0.6;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  word-wrap: break-word;
+  max-width: 244px;
+}
+
+.trucking-card__item--dark .trucking-card__distance {
+  color: white;
+}
+
+
+
+
 
 
 
@@ -8298,3 +8408,793 @@ right: px;
     font-size: 14px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------5 PAGES-------------------------------------------------------------------*/
+
+
+
+
+
+
+.amazon-fba-prep-section {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  min-height: 800px;
+  padding: 60px 0;
+}
+
+/* Десктопное изображение (видно только на больших экранах) */
+.amazon-fba-prep-image-desktop {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+  display: block;
+  padding-top: 100px;
+  margin-left: 1200px;
+}
+
+/* Мобильное изображение (скрыто на десктопах) */
+.amazon-fba-prep-image-mobile {
+  display: none;
+}
+
+.amazon-fba-content-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.amazon-fba-main-container {
+  width: 100%;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+
+.amazon-fba-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 800px;
+  padding-top: 200px;
+}
+
+.amazon-fba-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.amazon-fba-main-title {
+  color: white;
+  font-size: 67px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.amazon-fba-description-text {
+  color: white;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.8;
+  margin: 0;
+  max-width: 607px;
+}
+
+.amazon-fba-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.amazon-fba-quote-btn {
+  width: 230px;
+  padding: 25px 37px;
+  background: #5F0A00;
+  border-radius: 900px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.amazon-fba-btn-icon svg {
+  display: block;
+}
+
+.amazon-fba-cost-info {
+  color: white;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Медиазапросы для адаптива */
+@media (max-width: 1600px) {
+  .amazon-fba-main-container {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  
+  .amazon-fba-prep-image-desktop {
+    right: 200px;
+    width: 700px;
+    margin-left: 800px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .amazon-fba-main-container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
+  .amazon-fba-prep-image-desktop {
+    right: 100px;
+    width: 600px;
+    margin-left: 700px;
+  }
+  
+  .amazon-fba-main-title {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .amazon-fba-main-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  .amazon-fba-prep-image-desktop {
+    right: 50px;
+    width: 500px;
+    margin-left: 600px;
+  }
+  
+  .amazon-fba-main-title {
+    font-size: 48px;
+  }
+  
+  .amazon-fba-description-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .amazon-fba-prep-section {
+    min-height: 400px;
+  }
+  
+  .amazon-fba-main-container {
+    height: 200px;
+    text-align: center;
+  }
+  
+  /* Скрываем десктопное изображение на мобильных */
+  .amazon-fba-prep-image-desktop {
+    display: none;
+  }
+  
+  /* Показываем мобильное изображение */
+  .amazon-fba-prep-image-mobile {
+    display: block;
+    width: 100%;
+
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  
+  .amazon-fba-main-title {
+    font-size: 42px;
+  }
+  
+  .amazon-fba-description-text {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  
+  .amazon-fba-action-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .amazon-fba-quote-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .amazon-fba-main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .amazon-fba-main-title {
+    font-size: 36px;
+  }
+  
+  .amazon-fba-description-text {
+    font-size: 15px;
+  }
+  
+  .amazon-fba-info-content {
+    padding-top: 50px;
+    gap: 20px;
+  }
+  
+  .amazon-fba-header-block {
+    gap: 12px;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fba-challenges-section {
+  position: relative;
+  width: 100%;
+  background: #F9F9F9;
+  padding: 100px 0;
+}
+
+.fba-challenges-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fba-challenges-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.fba-challenges-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #17161B;
+  margin-bottom: 15px;
+}
+
+.fba-challenges-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #17161B;
+  opacity: 0.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.fba-challenges-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.fba-challenges-card {
+  width: calc(33.333% - 20px);
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #F2F2F2;
+  padding: 25px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fba-challenges-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.fba-card-icon {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 15px;
+}
+
+.fba-card-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.fba-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #17161B;
+  margin-bottom: 10px;
+}
+
+.fba-card-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #17161B;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+/* Special Card Styles */
+.fba-special-card {
+  background: linear-gradient(135deg, #511F1B 0%, #5F0B00 29%, #840600 56%, #B40000 78%, #521D18 92%, #AD0100 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.fba-special-card .fba-card-icon path {
+  stroke: white;
+  fill: white;
+}
+
+.fba-special-title {
+  color: white !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.fba-special-button {
+  padding: 16px 21px;
+  background: #0B0B0B;
+  border-radius: 900px;
+  border: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.fba-special-button:hover {
+  background: #333;
+}
+
+.fba-special-button svg {
+  width: 18px;
+  height: 19px;
+}
+
+.fba-special-bg {
+  position: absolute;
+  left: 36px;
+  top: -96px;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .fba-challenges-card {
+    width: calc(50% - 15px);
+  }
+  
+  .fba-special-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fba-challenges-section {
+    padding: 60px 0;
+  }
+  
+  .fba-challenges-title {
+    font-size: 36px;
+  }
+  
+  .fba-challenges-subtitle {
+    font-size: 16px;
+  }
+  
+  .fba-challenges-cards {
+    gap: 20px;
+  }
+  
+  .fba-challenges-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fba-challenges-title {
+    font-size: 30px;
+  }
+  
+  .fba-challenges-subtitle {
+    font-size: 15px;
+  }
+  
+  .fba-challenges-header {
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fulfillment-hero {
+  width: 100%;
+  max-width: 1920px;
+  align-self: stretch;
+  padding-top: 90px;
+  background: #242424;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  background-image: url(../img/pages5/Frame\ 31.png);
+}
+
+.fulfillment-header {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+
+.fulfillment-title {
+  width: 954px;
+  max-width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 54px;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: 69.66px;
+  margin: 0 auto;
+}
+
+.fulfillment-subtitle {
+  opacity: 0.70;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 28.50px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.fulfillment-map-container {
+  height: 595px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+/* Десктоп версия карты */
+.fulfillment-map-desktop {
+  display: block;
+  width: 100%;
+  height: 943px;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-image-desktop {
+  width: 100%;
+  position: absolute;
+  background-image: url('../img/pages5/Frame\ 31.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Мобильная версия карты */
+.fulfillment-map-mobile {
+  display: none;
+  width: 100%;
+  height: 630px;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-image-mobile {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../img/pages5/Frame\ 32-mob.png');
+  background-size: cover;
+  background-position: center;
+  bottom: 100px;
+}
+
+.location-card {
+  width: 282px;
+  padding: 25px;
+  left: 50%;
+  top: 263px;
+  transform: translateX(-50%);
+  position: absolute;
+  background: white;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+  z-index: 10;
+}
+
+.location-card-mobile {
+  width: 90%;
+  max-width: 300px;
+  padding: 15px;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  position: absolute;
+  background: white;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: none;
+  z-index: 10;
+}
+
+.location-address {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 9px;
+  display: inline-flex;
+}
+
+.location-icon {
+  position: relative;
+}
+
+.address-text {
+  flex: 1 1 0;
+  color: #17161B;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 22.24px;
+}
+
+.delivery-timeframe {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 9px;
+  display: inline-flex;
+}
+
+.time-icon {
+  position: relative;
+}
+
+.timeframe-details {
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  display: inline-flex;
+}
+
+.timeframe-label {
+  align-self: stretch;
+  color: #17161B;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 22.24px;
+}
+
+.timeframe-value {
+  align-self: stretch;
+  opacity: 0.70;
+  color: #17161B;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.close-card {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.card-pointer {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.map-overlay {
+  width: 100%;
+  height: 143px;
+  position: absolute;
+  background: linear-gradient(360deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
+}
+
+.map-marker-1 {
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  background: #5F0A00;
+  border-radius: 9999px;
+}
+
+.map-icon-1 {
+  width: 40px;
+  height: 18px;
+  position: absolute;
+  background: white;
+}
+
+.map-decoration-1 {
+  width: 14.05px;
+  height: 8px;
+  position: absolute;
+  transform: rotate(135deg);
+  transform-origin: top left;
+  background: #5F0A00;
+}
+
+.map-dot-1 {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background: #BEB2A2;
+  border-radius: 9999px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+  .fulfillment-title {
+    font-size: 42px;
+    line-height: 54px;
+  }
+  
+  .fulfillment-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fulfillment-hero {
+    padding-top: 60px;
+
+  }
+  
+  .fulfillment-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  
+  .fulfillment-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .fulfillment-map-container {
+    display: none;
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fulfillment-map-desktop {
+    display: none;
+  }
+  
+  .fulfillment-map-mobile {
+    display: block;
+  }
+  
+  .location-card {
+    display: none;
+  }
+  
+  .location-card-mobile {
+    display: inline-flex;
+  }
+  
+  .fulfillment-title {
+    font-size: 24px;
+    line-height: 32px;
+    width: 90%;
+  }
+  
+  .fulfillment-subtitle {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  
+  .map-overlay {
+    height: 80px;
+  }
+}
+
+
+
