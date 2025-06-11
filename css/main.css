@@ -665,6 +665,7 @@ table {
     align-items: center;
     justify-content: center;
     overflow: visible;
+    overflow: hidden;
   }
   
   .background {
@@ -681,6 +682,7 @@ table {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+
   }
   
   .hero-content {
@@ -731,7 +733,7 @@ table {
   .cta-container {
     position: relative;
     right: -44px;
-    bottom: -100px;
+    bottom: -80px;
     max-width: 100%;
 
   }
@@ -741,6 +743,7 @@ table {
     margin-right: 10px;
     display: flex;
     flex-direction: column;
+
   }
   
 
@@ -881,15 +884,27 @@ table {
 
 
 
+@media only screen and (max-width: 767px) { 
 
+  .container-slider { 
+    width: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    margin-top: 100px;
+  }
+
+}
 
 
 
 .container-slider {
   display: flex;
-  background: #17161B;
+  background-color: #17161b;
+  z-index: 0;
   justify-content: center;
   gap: 30px;
+  margin-top: 0px;
+  z-index: 1;
 }
 
 
