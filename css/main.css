@@ -11579,17 +11579,21 @@ top: -60px;
 }
 
 @media (max-width: 767px) {
+
+  .platton-warehouse-questions-wrapper {
+
+    gap: 10px;
+  }
+
   .platton-warehouse-section {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+
     max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-position: center;
-    background-size: cover;
+
   }
 
   .platton-warehouse-title {
@@ -11741,7 +11745,7 @@ top: -60px;
   .warehouse-solutions-container {
     padding: 40px 20px;
     height: 800px;
-    background-image: url(../img/pages6/Frame_199_mob.png);
+    background-image: url(../img/pages7/Frame_199_back_mob.png);
     background-position: center;
     background-size: cover;
     display: flex;
