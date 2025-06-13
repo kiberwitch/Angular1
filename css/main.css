@@ -922,6 +922,30 @@ table {
 }
 
 
+/* Responsive adjustments */
+@media (max-width: 567px) {
+  .container-slider { 
+    width: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    margin-top: 100px;
+  }
+
+}
+
+
+@media (max-width: 430px) {
+  .container-slider { 
+    width: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    margin-top: 100px;
+  }
+
+}
+
+
+
 
 .container-slider {
   display: flex;
