@@ -3424,7 +3424,6 @@ background-color: #E0E0E0;
 
 
 
-
 .news-section {
   width: 100%;
   max-width: 1920px;
@@ -3970,7 +3969,7 @@ margin: 0 auto;
 
 @media (max-width: 768px) {
 
-  // TODO откорректированно
+/*// TODO откорректированно*/
 
   .airfreight-banner {
     height: 500px;
@@ -4598,9 +4597,22 @@ flex-grow: 0
 
 
 
+/*// TODO откорректированно*/
 
+@media (max-width: 567px) {
 
+  .ocean-background-img {
+    right: -54px;
+    overflow: hidden;
+    top: 250px;
+    width: 500px;
 
+  }
+.ocean-container {
+  overflow: hidden;
+}
+
+}
 
 
 
@@ -4741,6 +4753,21 @@ order: 0;
 flex-grow: 0;
 margin: 0px 30px;
 }
+
+/*// TODO откорректированно*/
+
+.platton-ocean-card p {
+  color: #17161B;
+  align-self: stretch;
+   opacity: 0.70; 
+
+    font-size: 13px;
+     font-family: Inter; 
+     font-weight: 400;
+      line-height: 19.50px;
+       word-wrap: break-word
+}
+
 
 .platton-ocean-card  h2 {
   
@@ -5283,7 +5310,11 @@ color: #17161B;
 .cta-button svg {
   margin-left: 6px;
 }
+/*// TODO откорректированно*/
 
+.predictive-logistics-graphs-mobile {
+  display: none;
+}
 
 
 @media (max-width: 767px) {
@@ -5321,11 +5352,17 @@ color: #17161B;
     font-size: 14px;
     line-height: 20px;
   }
-
+/*// TODO откорректированно*/
   .predictive-logistics-graphs {
+    display: none;
     width: 100%;
     flex-direction: column;
     gap: 20px;
+  }
+
+/*// TODO откорректированно*/
+  .predictive-logistics-graphs-mobile {
+display: block;
   }
 
   .graph-container svg {
@@ -6095,6 +6132,18 @@ gap: 40px;
   }
 
 }
+
+/*// TODO откорректированно*/
+@media (max-width: 567px) {
+  .ocean-background-truck-img {
+right: -30px;
+    top: 250px;
+
+
+  }
+}
+
+
 
 
 
@@ -8251,6 +8300,13 @@ right: px;
 }
 
 @media (max-width: 767px) {
+/*// TODO откорректированно*/
+.platton-truck-faq-container-wrapper {
+  padding-top: 0px;
+  gap: 5px;
+}
+
+
   .platton-truck-freight-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -8265,6 +8321,7 @@ right: px;
   }
 
   .platton-truck-title {
+    margin-bottom: 0px; /*// TODO откорректированно*/
     font-size: 24px;
   }
 
@@ -8703,6 +8760,35 @@ right: px;
 
 
 
+
+
+/*// TODO откорректированно*/
+@media (max-width: 567px) {
+.platton-truck-freight-section {
+
+    height: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+
+
+  }
+
+
+  .truck-partner-container {
+    margin-top: 0px;
+    padding: 40px 20px;
+    height: 800px;
+    background-image: url(../img/pages4/back-truck-down-mob.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+}
 
 
 
@@ -10856,6 +10942,14 @@ color: #FFFFFF;
     padding: 50px 20px; /* Уменьшаем отступы */
     gap: 30px; /* Меньший отступ между блоками */
   }
+/*// TODO откорректированно*/
+
+  .pricing-tools h1 {
+    text-align: center;
+    font-size: 29px;
+  }
+
+
 
   .pricing-tool-card {
     width: 100%; /* Карточка занимает всю ширину */
@@ -11105,10 +11199,15 @@ top: -60px;
   }
 }
 
+/*// TODO откорректированно*/
 
 
-
-
+@media (max-width: 567px) {
+  .ecom-fulfillment-prep-section {
+width: 100%;
+    height: 960px;
+  }
+}
 
 
 
