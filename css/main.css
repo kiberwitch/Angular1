@@ -656,10 +656,12 @@ table {
 }
 /* Mobile styles (360px) */
 @media only screen and (max-width: 767px) {
+
   .hero-container {
     height: auto;
     min-height: 570px;
     padding: 30px 14px;
+    padding-bottom: 0px; /*// TODO откорректированно*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -741,7 +743,8 @@ table {
     padding: 15px;
     margin-right: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  /*// TODO откорректированно*/
+    height: 130px;
 
   }
   
@@ -769,8 +772,32 @@ table {
   }
 }
 
+
+
+/*// TODO откорректированно*/
+
+
 /* Mobile devices (up to 576px) */
 @media (max-width: 576px) {
+  .cta-container {
+    position: relative;
+    right: -44px;
+    bottom: -45px;
+    width: 100%;
+  max-width: 50px;
+  }
+  
+  .cta-description {
+    width: 120px;
+  }
+  
+  .cta-box {
+    padding: 15px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+
+  }
   .nav-menu,
   .nav-actions {
     display: none;
@@ -1521,14 +1548,24 @@ margin-left: 350px;
   font-size: 0.8125rem;
   font-family: 'Inter', sans-serif;
 }
-
+/*// TODO откорректированно*/
 .card-content {
-  color: #FFF;
+  color: #0B0B0B;
   font-size: 0.9375rem;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
   margin: 0;
 }
+
+/*// TODO откорректированно*/
+.card-content-testimonial {
+  color: #ffff;
+  font-size: 0.9375rem;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
 
 .card-author {
   display: flex;
@@ -2046,8 +2083,23 @@ margin: 0 auto;
 .about-button-icon {
   position: relative;
 }
+
+/*// TODO откорректированно*/
+
+
 /* Мобильные стили */
 @media (max-width: 768px) {
+  .about-button {
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    background: #0B0B0B;
+    border-radius: 900px;
+    justify-content: left;
+    gap: 6px;
+    display: inline-flex;
+  }
  
   /* Замена картинки на другую для моб */
   .about-background {
@@ -2067,8 +2119,7 @@ margin: 0 auto;
     background: rgba(0, 0, 0, 0.3); /* опционально, чтобы текст было легче читать */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
   }
 
   /* Сделайте ширину заголовка и описания адаптивной */
@@ -2081,7 +2132,7 @@ margin: 0 auto;
   .about-description {
     width: auto;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
   }
 
   /* Можно убрать фиксированные ширины */
@@ -2410,9 +2461,13 @@ padding-top: 200px;
   }
 }
 
+
+/*// TODO откорректированно*/
+
+
 @media (max-width: 768px) {
   .aerotrans-shipping-section {
-    min-height: 400px;
+    min-height: 800px;
   }
   
   .aerotrans-main-container {
@@ -2420,10 +2475,21 @@ padding-top: 200px;
 text-align: center;
   }
   
+
+/*// TODO откорректированно*/
+
   .aerotrans-global-map {
-    display: none; /* Скрываем изображение на мобильных */
+position: absolute;
+bottom: 30px;
+right: 5px;
+width: 400px;
   }
   
+
+.aerotrans-cost-info {
+width: 200px;
+}
+
   .aerotrans-main-title {
     font-size: 42px;
   }
@@ -3895,7 +3961,6 @@ margin: 0 auto;
   
   .airfreight-banner__content {
     width: 100%;
-    align-items: center;
   }
   
   .airfreight-banner__text-group {
@@ -3904,6 +3969,26 @@ margin: 0 auto;
 }
 
 @media (max-width: 768px) {
+
+  // TODO откорректированно
+
+  .airfreight-banner {
+    height: 500px;
+    background-image: url(../img/pages2/Frame199_mob.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+
+
+  .airfreight-banner__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+
   .airfreight-banner {
     padding: 60px 20px;
   }
@@ -11325,7 +11410,7 @@ top: -60px;
 }
 
 .card-content {
-  color: #FFF;
+  color: #0B0B0B;
   font-size: 0.9375rem;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
